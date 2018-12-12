@@ -1,0 +1,38 @@
+@import "variables.scss";
+@import "blocks/normilize.scss";
+@import "blocks/container.scss";
+@import "blocks/page_header.scss";
+@import "blocks/main_menu.scss";
+@import "blocks/main_section.scss";
+@import "blocks/second_menu.scss";
+@import "blocks/catalog.scss";
+@import "blocks/modal.scss";
+
+
+
+
+@font-face {
+font-family: "TT-Norms-Light";
+src:  url("../fonts/TT-Norms/TT-Norms-Light.otf") format("otf");
+font-weight: lighter;
+}
+
+@font-face {
+font-family: "TT-Norms";
+src:  url("../fonts/TT-Norms/TTNorms-Regular.otf") format("truetype"),
+      url("../fonts/TT-Norms/TTNorms-Regular.ttf") format("truetype"),
+      url("../fonts/TT-Norms/TTNorms-Regular.woff") format("woff");
+font-weight: 400;
+font-style: normal;
+}
+
+@font-face {
+font-family: "TT-Norms-Bold";
+src:  url("../fonts/TT-Norms/TT-Norms-Bold.otf") format("otf");
+font-weight: bold;
+}
+
+body {
+    background-color: #fff;
+    overflow-x:hidden
+}

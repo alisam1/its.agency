@@ -1,0 +1,101 @@
+.main_section
+{
+  display: flex;
+}
+.about_restaurant
+{
+  width: 1420px;
+  height: 700px;
+  background: url("../img/background_img.png") no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.about_restaurant__info
+{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 325px;
+}
+
+.information
+{
+  width: 900px;
+  height: 200px;
+  background-color:#D62323;
+  display: flex;
+  justify-content: space-around;
+}
+
+.information__title
+{
+  font-family: $font-family;
+  color: $second-color-text;
+  font-size: 48px;
+  line-height: 70px;
+  margin-top: 60px;
+}
+
+.information__description, .information__order, .information__hours
+{
+  margin-top: 45px;
+}
+
+.information__top
+{
+  font-family: $font-family;
+  color: $second-color-text;
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+.information__bottom
+{
+  font-family: $font-family;
+  color: $second-color-text;
+  font-size: 18px;
+}
+
+.about
+{
+  width: 335px;
+  height: 200px;
+  background-color:#313131;
+}
+
+.about a
+{
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: $font-family;
+  color: $second-color-text;
+  position: relative;
+  top: 94px;  left: 117px;
+
+}
+
+.order__title
+{
+  font-family: $font-family;
+  color: $main-color-text;
+  line-height: 27px;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.order__img
+{
+  margin-left: 20px;
+}
+
+.order__description
+{
+  font-family: $font-family;
+  line-height: 23px;
+  font-size: 18px;
+  text-align: center;
+  color: #A7A7A7;
+}

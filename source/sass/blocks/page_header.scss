@@ -1,0 +1,31 @@
+.page_header
+{
+  display:flex;
+  height: 72px;
+  border-bottom: 1px solid #E8EAED;
+}
+
+.user
+{
+  width: 165px;
+  border-left:  1px solid #E8EAED;
+}
+.user__name::before
+{
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/user_icon.svg");
+  margin-left: -20px;
+}
+
+.user__name
+{
+  font-family: $font-family;
+  color: $main-color-text;
+  font-size: 15px;
+  margin-left: 30px;
+  position: relative;
+  top: 10px;
+}
