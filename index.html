@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое задание для its.agency</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+  <header class="page_header container">
+
+    <nav class="main_menu">
+      <ul class="main_menu__list">
+        <li class="main_menu__item">Рестораны</li>
+        <li class="main_menu__item">Доставка</li>
+        <li class="main_menu__item">Караоке</li>
+        <li class="main_menu__item"><img src="img/menu_img.png" alt="Меню"></li>
+        <li class="main_menu__item">О нас</li>
+        <li class="main_menu__item">Новости</li>
+        <li class="main_menu__item">Контакты</li>
+      </ul>
+    </nav>
+
+    <div class="user">
+      <p class="user__name">Константин</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="main_section">
+      <div class="about_restaurant">
+      <div class="about_restaurant__info">
+      <div class="information">
+        <h3 class="information__title">Ресторан</h3>
+        <div class="information__description">
+            <p class="information__top">Кухня</p>
+            <p class="information__bottom">Восточная</p>
+        </div>
+        <div class="information__order">
+          <p class="information__top">Заказ</p>
+          <p class="information__bottom">от 1000 Р</p>
+        </div>
+        <div class="information__hours">
+          <p class="information__top">Доставка</p>
+          <p class="information__bottom">с 11:00 до 02:00</p>
+        </div>
+      </div>
+
+      <div class="about">
+          <a href="#">О ресторане</a>
+      </div>
+      </div>
+      </div>
+
+      <div class="order">
+        <h3 class="order__title">Мой заказ</h3>
+        <p class="order__img"><img src="img/order_img.png" alt="Мой заказ"></p>
+        <p class="order__description">Пока пусто:)</p>
+      </div>
+    </section>
+
+    <section class="second_menu container">
+          <ul class="second_menu__list">
+
+            <li class="second_menu__item"><a href="#">Супы<sup>12</sup></a></li>
+            <li class="second_menu__item"><a href="#">Горячее<sup>74</sup></a></li>
+            <li class="second_menu__item"><a href="#">Гарниры<sup>16</sup></a></li>
+            <li class="second_menu__item"><a href="#">Выпечка<sup>31</sup></a></li>
+            <li class="second_menu__item"><a href="#">Гриль<sup>8</sup></a></li>
+            <li class="second_menu__item"><a href="#">Детское<sup>12</sup></a></li>
+            <li class="second_menu__item"><a href="#">Закуски<sup>21</sup></a></li>
+            <li class="second_menu__item"><a href="#">Супы<sup>14</sup></a></li>
+            <li class="second_menu__item"><a href="#">Детское<sup>12</sup></a></li>
+            <li class="second_menu__item"><a href="#">Закуски<sup>21</sup></a></li>
+            <li class="second_menu__item"><a href="#">Супы<sup>14</sup></a></li>
+            <li class="second_menu__item"><a href="#">Супы<sup>14</sup></a></li>
+            <li class="second_menu__item"><a href="#">Супы<sup>14</sup></a></li>
+
+          </ul>
+    </section>
+
+    <section class="catalog container">
+      <h3 class="catalog__title">Популярные блюда<sup>12</sup></h3>
+      <div class="catalog__all">
+        <div class="catalog__item" onclick="showModalWin()">
+          <div class="catalog__item__link"><a href="#"><img src="img/plus_icon.png" alt="Иконка плюс"></a></div>
+           <div class="catalog__item__img"><img src="img/plov_img.png" alt="Плов Чайхоновский"></div>
+           <p class="catalog__item__title">Плов Чайхоновский <span class="weight">336г</span><span class="price">246Р</span></p>
+           <p class="catalog__item__description">Камчатский краб, авокадо, свежие овощи и цитрусовый...   <span>подробнее</span></p>
+        </div>
+        <div class="catalog__item" onclick="showModalWin()">
+          <div class="catalog__item__link catalog__item__link--active"><a href="#"><img src="img/minus_icon.png" class="minus_icon" alt="Иконка минус"><span>2</span><img src="img/plus_icon.png" alt="Иконка плюс"></a></div>
+          <div class="catalog__item__img"><img src="img/shaverma_img.png" alt="Шаверма"></div>
+          <p class="catalog__item__title">Шаверма<span class="weight">250г</span><span class="price">246Р</span></p>
+          <p class="catalog__item__description">Камчатский краб, авокадо, свежие овощи и цитрусовый...   <span>подробнее</span></p>
+        </div>
+        <div class="catalog__item" onclick="showModalWin()">
+          <div class="catalog__item__link"><a href="#"><img src="img/plus_icon.png" alt="Иконка плюс"></a></div>
+          <div class="catalog__item__img"><img src="img/shashlyk_img.png" alt="Шашлык"></div>
+          <p class="catalog__item__title">Шашлык<span class="weight">250г</span><span class="price">656Р</span></p>
+          <p class="catalog__item__description">Камчатский краб, авокадо, свежие овощи и цитрусовый...    <span>подробнее</span></p>
+        </div>
+        <div class="catalog__item" onclick="showModalWin()">
+          <div class="catalog__item__link"><a href="#"><img src="img/plus_icon.png" alt="Иконка плюс"></a></div>
+          <div class="catalog__item__img"><img src="img/sudak_img.png" alt="Судак"></div>
+          <p class="catalog__item__title">Судак<span class="weight">250г</span><span class="price">226Р</span></p>
+          <p class="catalog__item__description">Камчатский краб, авокадо, свежие овощи и цитрусовый...   <span>подробнее</span></p>
+        </div>
+        <div class="catalog__item" onclick="showModalWin()">
+          <div class="catalog__item__link"><a href="#"><img src="img/plus_icon.png" alt="Иконка плюс"></a></div>
+          <div class="catalog__item__img"><img src="img/manty_img.png" alt="Манты с лососем"></div>
+          <p class="catalog__item__title">Манты<span class="weight">250г</span><span class="price">326Р</span></p>
+          <p class="catalog__item__description">Камчатский краб, авокадо, свежие овощи и цитрусовый...    <span>подробнее</span></p>
+        </div>
+        <div class="catalog__item" onclick="showModalWin()">
+          <div class="catalog__item__link"><a href="#"><img src="img/plus_icon.png" alt="Иконка плюс"></a></div>
+          <div class="catalog__item__img"><img src="img/shaverma_double_img.png" alt="Шаверма"></div>
+          <p class="catalog__item__title">Шаверма<span class="weight">250г</span><span class="price">146Р</span></p>
+          <p class="catalog__item__description">Камчатский краб, авокадо, свежие овощи и цитрусовый...    <span>подробнее</span>е</p>
+        </div>
+        <div class="catalog__item" onclick="showModalWin()">
+          <div class="catalog__item__link"><a href="#"><img src="img/plus_icon.png" alt="Иконка плюс"></a></div>
+          <div class="catalog__item__img"><img src="img/beshbarmak_img.png" alt="Бешбармак"></div>
+          <p class="catalog__item__title">Бешбармак<span class="weight">250г</span><span class="price">446Р</span></p>
+          <p class="catalog__item__description">Камчатский краб, авокадо, свежие овощи и цитрусовый...    <span>подробнее</span></p>
+        </div>
+        <div class="catalog__item" onclick="showModalWin()">
+          <div class="catalog__item__link"><a href="#"><img src="img/plus_icon.png" alt="Иконка плюс"></a></div>
+          <div class="catalog__item__img"><img src="img/kovurma_img.png" alt="Ковурма"></div>
+          <p class="catalog__item__title">Ковурма<span class="weight">250г</span><span class="price">246Р</span></p>
+          <p class="catalog__item__description">Камчатский краб, авокадо, свежие овощи и цитрусовый...    <span>подробнее</span></p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+
+  <div id="popupWin" class="modalwin">
+            <div class="modal_content">
+              <div class="modal_content__img"><img src="img/Shaverma_big.png" alt="Шаверма"></div>
+              <div class="modal_content__about">
+                <div class="modal_content__title">Стейк из говядины <span>250г.</span></div>
+                <div class="modal_content__description"><span>Описание</span>Стейк из поясничной части мраморной говядины. Рекомендуемая степень прожарки medium</div>
+                <div class="modal_content__value"><span>Состав:</span>Микс салатов, лосось, соус терияки, соус Унаги</div>
+                <p class="modal_content__food">Пищевая ценность</p>
+                <div class="modal_content__price">
+                  <div class="modal_content__quantity">650<span>ккал</span></div>
+                  <div class="modal_content__quantity">34<span>белки</span></div>
+                  <div class="modal_content__quantity">60<span>жиры</span></div>
+                  <div class="modal_content__quantity">12<span>углеводы</span></div>
+                </div>
+                <div class="modal__price">
+                  <div class="modal__order">
+                    <p class="modal__plus"><a href="">+</a></p>
+                    <p class="modal__number">2</p>
+                    <p class="modal__minus"><a href="">-</a></p>
+                  </div>
+                  <div class="modal__rate">
+                    <p class="modal__cost">246 Р</p>
+                    <button class="modal__button">Добавить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+<script src="js/modal.js"></script>
+  </body>
+  </html>
