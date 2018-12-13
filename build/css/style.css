@@ -943,7 +943,7 @@ template {
     top: 0%;
     height: 660px; }
   .modal__price {
-    width: 395px;
+    width: 100%;
     height: 56px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -982,10 +982,10 @@ template {
     display: none; }
   .modal__rate--mobile {
     display: block;
-    width: 220px;
+    width: 70%;
     background-color: #D62323; }
   .modal__order {
-    width: 170px;
+    width: 30%;
     background-color: #B81111;
     display: -webkit-box;
     display: -ms-flexbox;

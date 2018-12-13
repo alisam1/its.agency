@@ -252,7 +252,7 @@ padding-left: 44px;
 
 .modal__price
 {
-  width: 395px;
+  width: 100%;
   height:56px;
   display: flex;
   flex-direction: row;
@@ -319,13 +319,13 @@ padding-left: 44px;
   .modal__rate--mobile
   {
     display:block;
-    width: 220px;
+    width: 70%;
     background-color: #D62323;;
   }
 
 .modal__order {
 
-    width: 170px;
+    width: 30%;
     background-color: #B81111;
     display: flex;
 
