@@ -19,6 +19,14 @@
   top: 325px;
 }
 
+.information_two
+{
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+}
+
 .information
 {
   width: 900px;
@@ -151,6 +159,7 @@
     flex-direction: row;
     position: relative;
     bottom: 20px;
+    width: 100%;
   }
 
   .information__description, .information__order, .information__hours
