@@ -313,7 +313,7 @@ template {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .container {
-    width: 375px;
+    width: 100%;
     margin: 0 auto; } }
 
 .page_header {
@@ -364,7 +364,8 @@ template {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 100px; }
+    height: 100px;
+    width: 100%; }
   .mobile_logo {
     margin-top: 16px; }
   .user {
@@ -438,6 +439,18 @@ template {
           flex-direction: row;
   position: absolute;
   top: 325px; }
+
+.information_two {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 500px; }
 
 .information {
   width: 900px;
@@ -540,7 +553,8 @@ template {
         -ms-flex-direction: row;
             flex-direction: row;
     position: relative;
-    bottom: 20px; }
+    bottom: 20px;
+    width: 100%; }
   .information__description, .information__order, .information__hours {
     position: relative;
     bottom: 70px;
@@ -702,7 +716,7 @@ template {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .catalog__all {
-    width: 375px;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -716,7 +730,7 @@ template {
   .catalog__item {
     margin-left: 30px; }
   .catalog__title {
-    width: 350px;
+    width: 320px;
     bottom: 0;
     left: 16px; }
   .catalog__title span {
@@ -1040,7 +1054,8 @@ template {
     bottom: 0;
     left: 0;
     -webkit-transition: background-color .3s;
-    transition: background-color .3s; }
+    transition: background-color .3s;
+    width: 95%; }
   .menu, .menu__submenu {
     list-style: none;
     padding: 0;
@@ -1121,6 +1136,9 @@ template {
   font-family: "TT-Norms-Bold";
   src: url("../fonts/TT-Norms/TT-Norms-Bold.otf") format("otf");
   font-weight: bold; }
+
+* {
+  outline: 1px solid red; }
 
 body {
   background-color: #fff;
