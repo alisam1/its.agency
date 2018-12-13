@@ -728,7 +728,7 @@ template {
         flex-wrap: wrap;
     margin-left: 0px; }
   .catalog__item {
-    margin-left: 30px; }
+    margin-left: 0px; }
   .catalog__title {
     width: 320px;
     bottom: 0;
@@ -1136,9 +1136,6 @@ template {
   font-family: "TT-Norms-Bold";
   src: url("../fonts/TT-Norms/TT-Norms-Bold.otf") format("otf");
   font-weight: bold; }
-
-* {
-  outline: 1px solid red; }
 
 body {
   background-color: #fff;
