@@ -109,6 +109,11 @@
   color: #A7A7A7;
 }
 
+.mobile_modal
+{
+  display: none;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
 
 
@@ -139,7 +144,7 @@
   .information__title
   {
     margin-left: 16px;
-    margin-top: 20px;
+    margin-top: 0px;
   }
 
   .information__title::after
@@ -197,5 +202,15 @@
 .order
 {
   display: none;
+}
+
+.mobile_modal
+{
+  display: block;
+  position: fixed;
+  bottom: 200px;
+  left: 250px;
+  z-index: 9998;
+  cursor: pointer;
 }
 }
