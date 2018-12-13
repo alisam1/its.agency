@@ -10,7 +10,7 @@
 
 .second_menu__item a
 {
-  font-family: $font-family;
+  font-family: $font-family-medium;
   color: $main-color-text;
   font-size: 18px;
   text-decoration: none;
@@ -47,6 +47,10 @@
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
 
+  .second_menu
+  {
+    display: none;
+  }
 
 }
 
