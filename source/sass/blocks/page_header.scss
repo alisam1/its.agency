@@ -5,6 +5,11 @@
   border-bottom: 1px solid #E8EAED;
 }
 
+.page_header__mobile
+{
+  display: none;
+}
+
 .user
 {
   width: 165px;
@@ -28,4 +33,50 @@
   margin-left: 30px;
   position: relative;
   top: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+  .page_header__mobile
+  {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+.page_header
+{
+  display: none;
+}
+
+.page_header__mobile
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.mobile_logo
+{
+  margin-top: 16px;
+}
+
+.user
+{
+  width: 45px;
+  border-left:  none;
+}
+.user__name::before
+{
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 20px;
+  background-image: url("../img/user_mobile.svg");
+  margin-top: 10px;
+}
+
 }

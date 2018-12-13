@@ -119,3 +119,42 @@
   font-family: $font-family-bold;
   font-weight: bold;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+
+  .catalog__all
+  {
+    width: 375px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0px;
+  }
+
+  .catalog__title
+  {
+    bottom: 0;
+    left: 16px;
+  }
+
+  .catalog__title span
+  {
+    display: none;
+  }
+
+  .catalog__title sup
+  {
+    line-height: 20px;
+    font-size: 18px;
+    opacity: 0.2;
+    padding-left: 0px;
+    position: relative;
+    bottom: 30px;
+  }
+}

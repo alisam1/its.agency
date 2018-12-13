@@ -22,3 +22,36 @@
   position: relative;
   bottom: 18px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+  .main_menu
+  {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+.main_menu
+{
+  display: none;
+}
+
+.main_menu__list
+{
+  display: none;
+}
+
+.main_menu__item
+{
+  display: none;
+}
+
+.main_menu__item img
+{
+  display: none;
+}
+
+}

@@ -72,7 +72,8 @@
   font-family: $font-family;
   color: $second-color-text;
   position: relative;
-  top: 94px;  left: 117px;
+  top: 94px;
+  left: 117px;
 
 }
 
@@ -98,4 +99,89 @@
   font-size: 18px;
   text-align: center;
   color: #A7A7A7;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+  .about_restaurant
+  {
+    width: 390px;
+    height: 528px;
+    background: url("../img/background_mobile.png") no-repeat;
+    background-size: contain;
+    position: relative;
+  }
+
+  .information
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .information__title
+  {
+    margin-left: 16px;
+    margin-top: 60px;
+  }
+
+  .information__title::after
+    {
+      content: "";
+      position: absolute;
+      width: 26px;
+      height: 25px;
+      background-image: url("../img/arrow_mobile.svg");
+      margin-top: 30px;
+      margin-left: 10px;
+    }
+
+  .information_two
+  {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 20px;
+  }
+
+  .information__description, .information__order, .information__hours
+  {
+    position: relative;
+    bottom: 70px;
+    margin-left: 30px;
+  }
+
+  .information__description
+  {
+    margin-left: 18px;
+  }
+
+  .information__top
+  {
+    font-family: $font-family;
+    color: $second-color-text;
+    opacity: 0.5;
+    font-size: 13px;
+  }
+
+  .information__bottom
+  {
+    font-family: $font-family;
+    color: $second-color-text;
+    font-size: 15px;
+  }
+
+  .about
+  {
+    display: none;
+  }
+
+.order
+{
+  display: none;
+}
 }

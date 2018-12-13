@@ -28,15 +28,41 @@
     </div>
   </header>
 
+  <header class="page_header__mobile container">
+
+    <nav class="mobile_menu">
+      <input class="nav__check" type="checkbox" id="showmenu">
+       <label class="nav__showmenu" for="showmenu"><img src="img/menu_burger.png" alt="Мобильное меню"></label>
+       <label class="nav__back" for="showmenu"></label>
+       <ul class="menu">
+         <li><a class="menu__item" href="#">Рестораны</a></li>
+         <li><a class="menu__item" href="#">Доставка</a></li>
+         <li><a class="menu__item" href="#">Караоке</a></li>
+         <li><a class="menu__item" href="#">О нас</a></li>
+         <li><a class="menu__item" href="#">Новости</a></li>
+         <li><a class="menu__item" href="#">Контакты</a></li>
+       </ul>
+    </nav>
+
+    <div class="mobile_logo"><img src="img/menu_img.png" alt="Меню"></div>
+    <div class="user">
+      <p class="user__name"></p>
+    </div>
+  </header>
+
+
   <main>
     <section class="main_section">
       <div class="about_restaurant">
       <div class="about_restaurant__info">
       <div class="information">
+        <div class="information_one">
         <h3 class="information__title">Ресторан</h3>
+        </div>
+        <div class="information_two">
         <div class="information__description">
-            <p class="information__top">Кухня</p>
-            <p class="information__bottom">Восточная</p>
+              <p class="information__top">Кухня</p>
+              <p class="information__bottom">Восточная</p>
         </div>
         <div class="information__order">
           <p class="information__top">Заказ</p>
@@ -46,6 +72,7 @@
           <p class="information__top">Доставка</p>
           <p class="information__bottom">с 11:00 до 02:00</p>
         </div>
+      </div>
       </div>
 
       <div class="about">
@@ -82,7 +109,7 @@
     </section>
 
     <section class="catalog container">
-      <h3 class="catalog__title">Популярные блюда<sup>12</sup></h3>
+      <h3 class="catalog__title">Популярные <span>блюда</span><sup>12</sup></h3>
       <div class="catalog__all">
         <div class="catalog__item" onclick="showModalWin()">
           <div class="catalog__item__link"><a href="#"><img src="img/plus_icon.png" alt="Иконка плюс"></a></div>
