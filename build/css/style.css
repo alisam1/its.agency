@@ -728,7 +728,8 @@ template {
         flex-wrap: wrap;
     margin-left: 0px; }
   .catalog__item {
-    margin-left: 0px; }
+    margin: 0 auto;
+    padding-top: 40px; }
   .catalog__title {
     width: 320px;
     bottom: 0;
