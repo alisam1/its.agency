@@ -509,6 +509,8 @@ template {
     background: url("../img/background_mobile.png") no-repeat;
     background-size: contain;
     position: relative; }
+  .about_restaurant__info {
+    width: 100%; }
   .information {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -517,7 +519,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 414px; }
+    width: 100%; }
   .information__title {
     margin-left: 16px;
     margin-top: 20px; }
