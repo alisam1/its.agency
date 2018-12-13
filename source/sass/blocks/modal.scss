@@ -328,8 +328,28 @@ padding-left: 44px;
     width: 30%;
     background-color: #B81111;
     display: flex;
+    justify-content: space-around;
 
 }
+
+.modal__number
+{
+  padding-left: 0px;
+  position: relative;
+  top: 10px;
+
+}
+
+.modal__plus a, .modal__minus a
+{
+  padding-left: 0px;
+}
+
+.modal__minus a
+{
+padding-left: 0px;
+}
+
 
 .modal__rate--text
 {
@@ -342,5 +362,6 @@ padding-left: 44px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   padding-top: 10px;
+  margin-left: -20px;
 }
 }
