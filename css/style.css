@@ -388,7 +388,7 @@ template {
       -ms-flex-direction: row;
           flex-direction: row;
   list-style-type: none;
-  font-family: "TT-Norms", sans-serif;
+  font-family: "TT-Norms-Medium", sans-serif;
   color: #333333;
   font-size: 15px;
   margin-left: 380px;
@@ -586,7 +586,7 @@ template {
   padding-bottom: 34px; }
 
 .second_menu__item a {
-  font-family: "TT-Norms", sans-serif;
+  font-family: "TT-Norms-Medium", sans-serif;
   color: #333333;
   font-size: 18px;
   text-decoration: none;
@@ -610,6 +610,10 @@ template {
 .second_menu__item a:hover sup {
   color: #D62323;
   opacity: 0.9; }
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .second_menu {
+    display: none; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .second_menu {
@@ -1123,20 +1127,25 @@ template {
             transform: translateX(0); } }
 
 @font-face {
-  font-family: "TT-Norms-Light";
-  src: url("../fonts/TT-Norms/TT-Norms-Light.otf") format("otf");
-  font-weight: lighter; }
-
-@font-face {
-  font-family: "TT-Norms";
-  src: url("../fonts/TT-Norms/TTNorms-Regular.otf") format("truetype"), url("../fonts/TT-Norms/TTNorms-Regular.ttf") format("truetype"), url("../fonts/TT-Norms/TTNorms-Regular.woff") format("woff");
-  font-weight: 400;
+  font-family: "TT-Norms-Bold";
+  src: url("../fonts/TT-Norms/TTNorms-Bold.eot");
+  src: local("TT Norms Bold"), local("TTNorms-Bold"), url("../fonts/TT-Norms/TTNorms-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/TT-Norms/TTNorms-Bold.woff") format("woff"), url("../fonts/TT-Norms/TTNorms-Bold.ttf") format("truetype");
+  font-weight: bold;
   font-style: normal; }
 
 @font-face {
-  font-family: "TT-Norms-Bold";
-  src: url("../fonts/TT-Norms/TT-Norms-Bold.otf") format("otf");
-  font-weight: bold; }
+  font-family: 'TT-Norms-Medium';
+  src: url("../fonts/TT-Norms/TTNorms-Medium.eot");
+  src: local("TT Norms Medium"), local("TTNorms-Medium"), url("../fonts/TT-Norms/TTNorms-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/TT-Norms/TTNorms-Medium.woff") format("woff"), url("../fonts/TT-Norms/TTNorms-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "TT-Norms";
+  src: url("../fonts/TT-Norms/TTNorms-Regular.eot");
+  src: local("TT Norms Regular"), local("TTNorms-Regular"), url("../fonts/TT-Norms/TTNorms-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/TT-Norms/TTNorms-Regular.woff") format("woff"), url("../fonts/TT-Norms/TTNorms-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 
 body {
   background-color: #fff;
