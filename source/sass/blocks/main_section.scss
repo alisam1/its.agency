@@ -116,11 +116,16 @@
     position: relative;
   }
 
+  .about_restaurant__info
+  {
+    width: 100%;
+  }
+
   .information
   {
     display: flex;
     flex-direction: column;
-    width: 414px;
+    width: 100%;
   }
 
   .information__title
