@@ -2,16 +2,24 @@
 
 function showModalWin() {
 
-                var darkLayer = document.createElement('div'); // слой затемнения
-                darkLayer.id = 'shadow'; // id чтобы подхватить стиль
-                document.body.appendChild(darkLayer); // включаем затемнение
+                var darkLayer = document.createElement('div');
+                darkLayer.id = 'shadow';
+                document.body.appendChild(darkLayer);
 
-                var modalWin = document.getElementById('popupWin'); // находим наше "окно"
-                modalWin.style.display = 'block'; // "включаем" его
+                var modalWin = document.getElementById('popupWin');
+                modalWin.style.display = 'block';
 
-                darkLayer.onclick = function () {  // при клике на слой затемнения все исчезнет
-                    darkLayer.parentNode.removeChild(darkLayer); // удаляем затемнение
-                    modalWin.style.display = 'none'; // делаем окно невидимым
+                darkLayer.onclick = function () {
+                    darkLayer.parentNode.removeChild(darkLayer);
+                    modalWin.style.display = 'none';
+                    return false;
+                };
+
+                var closeModal = document.getElementById('closeModal');
+
+                  closeModal.onclick = function () {
+                    darkLayer.parentNode.removeChild(darkLayer);
+                    modalWin.style.display = 'none'; 
                     return false;
                 };
             }
