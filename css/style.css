@@ -921,7 +921,9 @@ template {
 
 .modal_content__img {
   margin-left: 200px;
-  margin-top: 50px; }
+  margin-top: 0px;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s; }
 
 .modal_content__about {
   background: rgba(232, 234, 237, 0.3);
@@ -1000,6 +1002,22 @@ template {
   font-size: 18px;
   margin-left: 40px; }
 
+.modal_content__quantity:nth-child(4) {
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s; }
+
+.modal_content__quantity:nth-child(3) {
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s; }
+
+.modal_content__quantity:nth-child(2) {
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s; }
+
+.modal_content__quantity:nth-child(1) {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s; }
+
 .modal_content__quantity span {
   font-family: "TT-Norms", sans-serif;
   color: #333333;
@@ -1017,11 +1035,14 @@ template {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row;
+  background-color: #B81111; }
 
 .modal__order {
   width: 105px;
-  background-color: #B81111; }
+  background-color: #B81111;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }
 
 .modal__rate {
   width: 365px;
@@ -1061,7 +1082,9 @@ template {
   font-family: "TT-Norms-Bold", sans-serif;
   font-weight: bold;
   font-size: 18px;
-  padding-top: 33px; }
+  padding-top: 33px;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s; }
 
 .modal__cost::after {
   content: "";
@@ -1086,7 +1109,9 @@ template {
   padding-top: 48px;
   position: relative;
   right: 50px;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s; }
 
 .modal__rate--mobile {
   display: none; }
