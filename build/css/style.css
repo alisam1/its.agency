@@ -813,7 +813,8 @@ template {
   position: fixed;
   /* фиксированное позиционирование, окно стабильно при прокрутке */
   padding: 15px;
-  border: none; }
+  border: none;
+  z-index: 99999; }
 
 #shadow {
   position: fixed;
@@ -826,6 +827,9 @@ template {
   /*прозрачность*/
   left: 0;
   top: 0; }
+
+#closeModal {
+  cursor: pointer; }
 
 .modal_content {
   display: -webkit-box;
@@ -1009,6 +1013,8 @@ template {
   display: none; }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  #closeModal {
+    float: right; }
   .modalwin {
     top: 0%;
     height: 660px; }
@@ -1189,7 +1195,6 @@ template {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .modal {
-    /* Не обязательно  block */
     display: block;
     width: 100%;
     max-width: 100%;
@@ -1200,7 +1205,6 @@ template {
     left: 50%;
     top: 70%;
     bottom: 0;
-    /* Центруем */
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     background: white;
@@ -1230,10 +1234,8 @@ template {
     top: 10px;
     right: 20px;
     border: 0;
-    background: black;
-    color: white;
-    padding: 5px 10px;
-    font-size: 1.3rem; } }
+    background: url("../img/close_icon.png") no-repeat;
+    padding: 5px 10px; } }
 
 @font-face {
   font-family: "TT-Norms-Bold";

@@ -16,7 +16,6 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
   .modal {
-    /* Не обязательно  block */
     display: block;
 
 
@@ -34,7 +33,6 @@
     top: 70%;
     bottom: 0;
 
-    /* Центруем */
     transform: translate(-50%, -50%);
 
 
@@ -73,9 +71,7 @@
     right: 20px;
 
     border: 0;
-    background: black;
-    color: white;
+    background: url("../img/close_icon.png") no-repeat;
     padding: 5px 10px;
-    font-size: 1.3rem;
   }
 }
