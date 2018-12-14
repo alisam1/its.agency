@@ -3,14 +3,13 @@
   height: 700px;
   width: 100%;
   background: #fff;
-  top: 20%; /* отступ сверху */
+  top: 20%;
   right: 0;
   left: 0;
   margin: 0 auto;
-  z-index:2; /* поверх всех */
-  display: none;  /* сначала невидим */
-  position: fixed; /* фиксированное позиционирование, окно стабильно при прокрутке */
-  padding: 15px;
+  z-index:2;
+  display: none;
+  position: fixed; 
   border: none;
   z-index: 99999;
 }

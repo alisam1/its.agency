@@ -881,17 +881,12 @@ template {
   width: 100%;
   background: #fff;
   top: 20%;
-  /* отступ сверху */
   right: 0;
   left: 0;
   margin: 0 auto;
   z-index: 2;
-  /* поверх всех */
   display: none;
-  /* сначала невидим */
   position: fixed;
-  /* фиксированное позиционирование, окно стабильно при прокрутке */
-  padding: 15px;
   border: none;
   z-index: 99999; }
 
