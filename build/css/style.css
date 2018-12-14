@@ -394,6 +394,12 @@ template {
   margin-left: 380px;
   margin-right: 380px; }
 
+.main_menu__item a {
+  text-decoration: none;
+  font-family: "TT-Norms-Medium", sans-serif;
+  color: #333333;
+  font-size: 15px; }
+
 .main_menu__item {
   padding-left: 40px;
   position: relative;
@@ -676,8 +682,38 @@ template {
     color: #D62323;
     opacity: 0.9; } }
 
+.catalog_top {
+  width: 1420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.catalog_category {
+  font-family: "TT-Norms-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  position: relative;
+  bottom: 80px;
+  right: 40px; }
+
+.catalog_category::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 8px;
+  background-image: url("../img/arrow_category.svg");
+  margin-left: 10px;
+  margin-top: 10px; }
+
 .catalog__title {
-  width: 400px;
   font-family: "TT-Norms-Bold", sans-serif;
   color: #333333;
   line-height: 36px;
@@ -771,9 +807,11 @@ template {
   line-height: 21px;
   font-size: 15px; }
 
-.catalog__item__description span {
+.catalog__item__description span a {
+  text-decoration: none;
   font-family: "TT-Norms-Bold", sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #333333; }
 
 .catalog__mobile {
   display: none; }
@@ -781,6 +819,22 @@ template {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .catalog__desktop {
     display: none; }
+  .catalog_category {
+    display: none; }
+  .catalog_category::after {
+    display: none; }
+  .catalog_top {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .catalog__mobile {
     display: block; }
   .catalog__all {

@@ -10,6 +10,14 @@
   margin-right: 380px;
 }
 
+.main_menu__item a
+{
+  text-decoration: none;
+  font-family: $font-family-medium;
+  color: $main-color-text;
+  font-size: 15px;
+}
+
 .main_menu__item
 {
   padding-left: 40px;
