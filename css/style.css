@@ -429,6 +429,14 @@ template {
   background-size: contain;
   position: relative; }
 
+.about_restaurant::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 1800px;
+  background-image: url("../img/border-right.svg");
+  margin-left: 1420px; }
+
 .about_restaurant__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -602,7 +610,7 @@ template {
   color: #333333;
   font-size: 18px;
   text-decoration: none;
-  margin-left: 40px; }
+  margin-left: 38px; }
 
 .second_menu__item sup {
   font-family: "TT-Norms", sans-serif;
@@ -699,7 +707,7 @@ template {
   margin-left: 30px; }
 
 .catalog__item {
-  width: 300px;
+  width: 290px;
   margin-left: 50px;
   margin-bottom: 90px;
   position: relative; }
@@ -767,7 +775,14 @@ template {
   font-family: "TT-Norms-Bold", sans-serif;
   font-weight: bold; }
 
+.catalog__mobile {
+  display: none; }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .catalog__desktop {
+    display: none; }
+  .catalog__mobile {
+    display: block; }
   .catalog__all {
     width: 100%;
     display: -webkit-box;
@@ -785,8 +800,7 @@ template {
     padding-top: 40px; }
   .catalog__title {
     width: 320px;
-    bottom: 0;
-    left: 16px; }
+    bottom: 0; }
   .catalog__title span {
     display: none; }
   .catalog__title sup {
@@ -795,7 +809,18 @@ template {
     opacity: 0.2;
     padding-left: 0px;
     position: relative;
-    bottom: 30px; } }
+    bottom: 30px; }
+  .order_mobile {
+    border-top: 1px solid #E8EAED;
+    margin-top: 50px; }
+  .order_text {
+    font-family: "TT-Norms-Bold", sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    color: #000; }
+  .order_text span {
+    color: #D62323; } }
 
 .modalwin {
   height: 700px;
@@ -1207,6 +1232,7 @@ template {
     bottom: 0;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+    z-index: 999999;
     background: white;
     -webkit-box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
             box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9); }
@@ -1233,9 +1259,10 @@ template {
     z-index: 1;
     top: 10px;
     right: 20px;
+    background: #fff;
     border: 0;
-    background: url("../img/close_icon.png") no-repeat;
-    padding: 5px 10px; } }
+    padding: 5px 10px;
+    cursor: pointer; } }
 
 @font-face {
   font-family: "TT-Norms-Bold";
