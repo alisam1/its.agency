@@ -11,6 +11,16 @@
   position: relative;
 }
 
+.about_restaurant::after
+{
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 1800px;
+  background-image: url("../img/border-right.svg");
+  margin-left: 1420px;
+}
+
 .about_restaurant__info
 {
   display: flex;
