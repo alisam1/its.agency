@@ -4,6 +4,7 @@
   "private": true,
   "description": "itsAgency",
   "devDependencies": {
+    "animate.css": "^3.7.0",
     "autoprefixer": "8.3.x",
     "browser-sync": "^2.24.4",
     "gulp": "3.9.x",
@@ -49,7 +50,6 @@
   },
   "dependencies": {
     "ajv": "^6.5.0",
-    "animate.css": "^3.7.0",
     "jquery": "^3.3.1",
     "node-sass": "^4.10.0",
     "normalize.css": "^8.0.0"
